@@ -292,17 +292,17 @@ body{
         padding: 64px 12px;
     }
 }
-.pagination{
+.pagination2{
     width: 100%;
     max-width: 636px;
     margin: 0 auto;
 }
-.pagination ul{
+.pagination2 ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.pagination ul li a{
+.pagination2 ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,11 +316,11 @@ body{
     border-radius: 40px;
     padding: 8px 16px;
 }
-.pagination ul li a:hover{
+.pagination2 ul li a:hover{
     background: #4B4B4B;
     color: #fff;
 }
-.pagination ul li a i{
+.pagination2 ul li a i{
     font-size: 24px;
 }
 .information{
