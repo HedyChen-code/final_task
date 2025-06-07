@@ -1,0 +1,367 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+}
+/* css reset ending */
+
+/* layout 共通佈局 */
+.wrap{
+    max-width: 1920px;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #FBFBFB;
+}
+/* navbar 導航列 */
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+
+}
+.nav-item a{
+    color: #000;
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color: #0027d5;
+}
+/* footer表尾 */
+.footer{
+    text-align: center;
+    padding: 24px 0;
+    background: #fff;
+}
+.footer p{
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* 客製化區域 */
+/* .content */
+.content{
+ max-width: 1920px;
+ width: 100%;
+ height: auto;
+ margin: 0 auto;
+}
+/* index 頁面 */
+/* blog 頁面 */
+/* blog-detail 頁面 */
+.banner3{
+    height: calc(100vh - 90px);
+    border: 1px solid #6C757D;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.banner3 .banner-photo2{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/About%20Section.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner3 .banner-article{
+    width: 50%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-article p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.banner-article h3{
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #0027D5;
+    margin-bottom: 8px;
+}
+.banner-article h3 .btn{
+    width: fit-content;
+    height: auto;
+    white-space: nowrap;
+    background: #0027D5;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    height: 36px;
+    border-radius: 40px;
+    margin-left: 8px;
+    flex-wrap: wrap;
+}
+.banner-article h3 .btn:hover{
+    background: #ff7700;
+}
+.banner-article h2{
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+@media (max-width: 767px){
+    .banner3{
+        flex-direction: column;
+        height: calc(100vh - 90px);
+        gap: 0;
+    }
+    .banner3 .banner-photo2{
+        width: 100%;
+        height: calc(100vh - 90px - 138px);
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog-content/About%20Section.png?raw=true);
+    }
+    .banner3 .banner-article{
+        width: 100%;
+        padding: 12px 12px;
+    }
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 636px;
+    margin: 0 auto;
+    padding: 80px 0;
+    
+}
+.article img{
+    max-width: 100%;
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+.article h2{
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #0027D5;
+    margin-bottom: 24px;
+}
+.article p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+}
+.article h3{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 12px;
+}
+.article .ol-title{
+    margin-bottom: 24px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+}
+.article ol li{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+}
+.article a{
+    color: #0027D5;
+    text-decoration: none;
+}
+.article a:hover{
+    color: #00A6FF;
+}
+.article .callout{
+    display: block;
+    background: #EDEDED;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #000;
+    padding: 24px;
+    border-radius: 24px;
+    margin-top: 24px;
+    width: 100%;
+}
+.article ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.article ul li{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+}
+.article .contact{
+    text-decoration: underline;
+}
+.article-extension{
+    margin-top: 48px;
+}
+.article .article-extension ul li .extension-list{
+    color: #000;
+}
+.article .article-extension ul li .extension-list:hover{
+    color: #00A6FF;
+}
+@media (max-width: 767px){
+    .article{
+        width: 100%;
+        padding: 64px 12px;
+    }
+}
+.pagination{
+    width: 100%;
+    max-width: 636px;
+    margin: 0 auto;
+}
+.pagination ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #4B4B4B;
+    background: #fff;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 8px 16px;
+}
+.pagination ul li a:hover{
+    background: #4B4B4B;
+    color: #fff;
+}
+.pagination ul li a i{
+    font-size: 24px;
+}
+.information{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-inline: clamp(16px, 10vw, 312px);
+    flex-wrap: wrap;
+}
+.mail a{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+.socialmedia ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+}
+.socialmedia ul li a img{
+    width: 44px;
+    height: 44px;
+}
+@media (max-width: 767px){
+    .information{
+        display: none;
+    }
+}
+/* .information */
+/* index 頁面 */
+/* blog 頁面 */
+/* blog-detail 頁面 */
