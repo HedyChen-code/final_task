@@ -54,7 +54,6 @@ table {
 
 *, *::before, *::after{
     box-sizing: border-box;
-    outline: 1px solid gray;
 }
 body{
     font-family: "Noto Sans TC", "Noto Sans", sans-serif;
